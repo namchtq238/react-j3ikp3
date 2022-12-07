@@ -13,6 +13,368 @@ export default function App() {
 }
 
 const FormCustom = () => {
+  const data = [
+    {
+        "id": null,
+        "team1": {
+            "id": 1,
+            "teamName": "Arsenal"
+        },
+        "team2": {
+            "id": 2,
+            "teamName": "Liverpool"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 3,
+            "teamName": "Chelsea"
+        },
+        "team2": {
+            "id": 4,
+            "teamName": "Newcatsle United"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 5,
+            "teamName": "Manchester United"
+        },
+        "team2": {
+            "id": 6,
+            "teamName": "Manchester City"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 1,
+            "teamName": "Arsenal"
+        },
+        "team2": {
+            "id": 2,
+            "teamName": "Liverpool"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 3,
+            "teamName": "Chelsea"
+        },
+        "team2": {
+            "id": 4,
+            "teamName": "Newcatsle United"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 5,
+            "teamName": "Manchester United"
+        },
+        "team2": {
+            "id": 6,
+            "teamName": "Manchester City"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 1,
+            "teamName": "Arsenal"
+        },
+        "team2": {
+            "id": 2,
+            "teamName": "Liverpool"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 3,
+            "teamName": "Chelsea"
+        },
+        "team2": {
+            "id": 4,
+            "teamName": "Newcatsle United"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 5,
+            "teamName": "Manchester United"
+        },
+        "team2": {
+            "id": 6,
+            "teamName": "Manchester City"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 1,
+            "teamName": "Arsenal"
+        },
+        "team2": {
+            "id": 2,
+            "teamName": "Liverpool"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 3,
+            "teamName": "Chelsea"
+        },
+        "team2": {
+            "id": 4,
+            "teamName": "Newcatsle United"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 5,
+            "teamName": "Manchester United"
+        },
+        "team2": {
+            "id": 6,
+            "teamName": "Manchester City"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 1,
+            "teamName": "Arsenal"
+        },
+        "team2": {
+            "id": 2,
+            "teamName": "Liverpool"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 3,
+            "teamName": "Chelsea"
+        },
+        "team2": {
+            "id": 4,
+            "teamName": "Newcatsle United"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 5,
+            "teamName": "Manchester United"
+        },
+        "team2": {
+            "id": 6,
+            "teamName": "Manchester City"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 1,
+            "teamName": "Arsenal"
+        },
+        "team2": {
+            "id": 2,
+            "teamName": "Liverpool"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 3,
+            "teamName": "Chelsea"
+        },
+        "team2": {
+            "id": 4,
+            "teamName": "Newcatsle United"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 5,
+            "teamName": "Manchester United"
+        },
+        "team2": {
+            "id": 6,
+            "teamName": "Manchester City"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 1,
+            "teamName": "Arsenal"
+        },
+        "team2": {
+            "id": 2,
+            "teamName": "Liverpool"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 3,
+            "teamName": "Chelsea"
+        },
+        "team2": {
+            "id": 4,
+            "teamName": "Newcatsle United"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 5,
+            "teamName": "Manchester United"
+        },
+        "team2": {
+            "id": 6,
+            "teamName": "Manchester City"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 1,
+            "teamName": "Arsenal"
+        },
+        "team2": {
+            "id": 2,
+            "teamName": "Liverpool"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 3,
+            "teamName": "Chelsea"
+        },
+        "team2": {
+            "id": 4,
+            "teamName": "Newcatsle United"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 5,
+            "teamName": "Manchester United"
+        },
+        "team2": {
+            "id": 6,
+            "teamName": "Manchester City"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 1,
+            "teamName": "Arsenal"
+        },
+        "team2": {
+            "id": 2,
+            "teamName": "Liverpool"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 3,
+            "teamName": "Chelsea"
+        },
+        "team2": {
+            "id": 4,
+            "teamName": "Newcatsle United"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 5,
+            "teamName": "Manchester United"
+        },
+        "team2": {
+            "id": 6,
+            "teamName": "Manchester City"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 1,
+            "teamName": "Arsenal"
+        },
+        "team2": {
+            "id": 2,
+            "teamName": "Liverpool"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 3,
+            "teamName": "Chelsea"
+        },
+        "team2": {
+            "id": 4,
+            "teamName": "Newcatsle United"
+        },
+        "isDerby": false
+    },
+    {
+        "id": null,
+        "team1": {
+            "id": 5,
+            "teamName": "Manchester United"
+        },
+        "team2": {
+            "id": 6,
+            "teamName": "Manchester City"
+        },
+        "isDerby": false
+    }
+]
   const [dataSource, setDataSource] = useState([]);
   const [form] = Form.useForm();
   const onFinish = (values) => {
@@ -26,50 +388,14 @@ const FormCustom = () => {
       .then((x) => x.json())
       .then((x) => {
         console.log(x);
-        const dataSource = [
-          {
-            key: '1',
-            name: 'Mike',
-            age: 32,
-            address: '10 Downing Street',
-          },
-          {
-            key: '2',
-            name: 'John',
-            age: 42,
-            address: '10 Downing Street',
-          },
-          {
-            key: '2',
-            name: 'John',
-            age: 42,
-            address: '10 Downing Street',
-          },
-        ];
+        const dataSource = data
+        console.log(data)
         setDataSource(dataSource);
         form.resetFields();
       })
       .catch((err) => {console.log(err)
-        const dataSource = [
-          {
-            key: '1',
-            name: 'Mike',
-            age: 32,
-            address: '10 Downing Street',
-          },
-          {
-            key: '2',
-            name: 'John',
-            age: 42,
-            address: '10 Downing Street',
-          },
-          {
-            key: '2',
-            name: 'John',
-            age: 42,
-            address: '10 Downing Street',
-          },
-        ];
+        console.log(data)
+        const dataSource = data;
         setDataSource(dataSource);
         form.resetFields();
 });
@@ -88,7 +414,7 @@ const FormCustom = () => {
           autoComplete="off"
           form={form}
         >
-          {Array.from({ length: 6 }).map((_, index) => (
+          {/* {Array.from({ length: 6 }).map((_, index) => (
             <Form.Item
               label={`Name ${index + 1}`}
               name={`name_${index}`}
@@ -96,10 +422,10 @@ const FormCustom = () => {
             >
               <Input />
             </Form.Item>
-          ))}
+          ))} */}
           <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
             <Button type="primary" htmlType="submit">
-              Submit
+              Process
             </Button>
           </Form.Item>
         </Form>
@@ -112,24 +438,33 @@ const FormCustom = () => {
 const TableCustom = (props) => {
   const columns = [
     {
-      title: 'Name',
-      dataIndex: 'name',
-      key: 'name',
+      title: 'Team 1',
+      dataIndex: 'team2.teamName',
+      key: 'team1.teamName',
       render: (_, record) => {
-        return record.name;
+        return record.team1.teamName;
       },
     },
     {
-      title: 'Age',
-      dataIndex: 'age',
-      key: 'age',
+      title: 'Team 2',
+      dataIndex: 'team2.teamName',
+      key: 'team2.teamName',
+      render: (_, record) => {
+        return record.team2.teamName;
+      },
+
     },
     {
-      title: 'Address',
-      dataIndex: 'address',
-      key: 'address',
+      title: 'Derby Match',
+      dataIndex: 'isDerby',
+      key: 'isDerby',
+      render : (text) => String(text),
     },
   ];
 
-  return <Table dataSource={props.dataSource} columns={columns} />;
+  return <Table dataSource={props.dataSource} 
+  columns={columns} 
+  pagination={false}
+  rowClassName={(_r, i) => (i % 6 <3 ? 'active-row' : '')}
+  />;
 };
