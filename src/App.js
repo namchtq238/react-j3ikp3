@@ -13,12 +13,8 @@ export default function App() {
 }
 
 const FormCustom = () => {
-  const [count, setCount] = useState(0);
   const [dataSource, setDataSource] = useState([]);
   const [form] = Form.useForm();
-  const onChangeNum = (event) => {
-    setCount(+event.target.value);
-  };
   const onFinish = (values) => {
     const names = Object.values(values).map((x) => x);
     console.log('Success:', JSON.stringify(names));
@@ -61,10 +57,6 @@ const FormCustom = () => {
   };
   return (
     <>
-      <Form.Item label="Nhập số">
-        <Input type="number" onChange={onChangeNum} />
-      </Form.Item>
-      {count > 0 && (
         <Form
           name="basic"
           initialValues={{ remember: true }}
@@ -73,7 +65,7 @@ const FormCustom = () => {
           autoComplete="off"
           form={form}
         >
-          {Array.from({ length: count }).map((_, index) => (
+          {Array.from({ length: 6 }).map((_, index) => (
             <Form.Item
               label={`Name ${index + 1}`}
               name={`name_${index}`}
@@ -88,7 +80,7 @@ const FormCustom = () => {
             </Button>
           </Form.Item>
         </Form>
-      )}
+      
       <TableCustom dataSource={dataSource} />
     </>
   );
