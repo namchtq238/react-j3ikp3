@@ -20,10 +20,11 @@ const FormCustom = () => {
     setCount(+event.target.value);
   };
   const onFinish = (values) => {
-    console.log('Success:', values);
     const names = Object.values(values).map((x) => x);
+    console.log('Success:', JSON.stringify(names));
+
     fetch('localhost:8090/abc', {
-      body: JSON.stringify({ names }),
+      body: JSON.stringify(names),
       method: 'POST',
     })
       .then((x) => x.json())
