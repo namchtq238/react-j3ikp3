@@ -49,7 +49,30 @@ const FormCustom = () => {
         setDataSource(dataSource);
         form.resetFields();
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {console.log(err)
+        const dataSource = [
+          {
+            key: '1',
+            name: 'Mike',
+            age: 32,
+            address: '10 Downing Street',
+          },
+          {
+            key: '2',
+            name: 'John',
+            age: 42,
+            address: '10 Downing Street',
+          },
+          {
+            key: '2',
+            name: 'John',
+            age: 42,
+            address: '10 Downing Street',
+          },
+        ];
+        setDataSource(dataSource);
+        form.resetFields();
+});
   };
 
   const onFinishFailed = (errorInfo) => {
